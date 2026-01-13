@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sefaköy Super Stay Suit Hotel | Resmi Web Sitesi</title>
+    <title>Sefaköy Otel | Super Stay Suit Otel Küçükçekmece | Uygun Fiyatlı Suitler</title>
+    <meta name="description" content="Sefaköy ve Küçükçekmece'de konforlu, modern ve uygun fiyatlı suit otel odaları. Merkezi konumda, güvenli ve lüks konaklama için hemen rezervasyon yapın.">
+    
+    <meta name="google-site-verification" content="google6230de3ca9fc16be" />
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <nav class="navbar">
-        <div class="logo">SuperStay</div>
+        <div class="logo">Super Stay Suit</div>
         <ul class="nav-links">
             <li><a href="#home">Ana Sayfa</a></li>
             <li><a href="#rooms">Odalarımız</a></li>
@@ -18,38 +24,53 @@
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Sefaköy Super Stay Suit Hotel</h1>
-            <p>Küçükçekmece'nin kalbinde konfor ve lüksün buluşma noktası.</p>
-            <button id="mainRezBtn" onclick="scrollToRooms()">Hemen Rezervasyon Yap</button>
+            <h1>Sefaköy'ün Kalbinde Konfor</h1>
+            <p>Küçükçekmece'de lüks ve uygun fiyatlı konaklamanın adresi.</p>
+            <a href="#rooms" class="btn">Odaları Gör</a>
         </div>
     </header>
 
-    <section id="rooms" class="rooms-section">
-        <h2>Seçkin Odalarımız ve Suitlerimiz</h2>
-        <div class="room-grid" id="roomGrid">
+    <section id="rooms" class="rooms">
+        <h2>Suit Odalarımız</h2>
+        <div class="room-grid">
+            <div class="room-card">
+                <img src="images/oda1.jpg" alt="Ekonomik Suit">
+                <div class="room-info">
+                    <h3>Ekonomik Suit</h3>
+                    <p>Konforlu ve bütçe dostu.</p>
+                    <button class="btn" onclick="openModal('Ekonomik Suit')">Rezervasyon Yap</button>
+                </div>
             </div>
+            <div class="room-card">
+                <img src="images/oda2.jpg" alt="Lüks Suit">
+                <div class="room-info">
+                    <h3>Deluxe Suit</h3>
+                    <p>Geniş ve modern tasarım.</p>
+                    <button class="btn" onclick="openModal('Deluxe Suit')">Rezervasyon Yap</button>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <div id="roomModal" class="modal">
+    <div id="bookingModal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span>
-            <div id="modalBody">
-                </div>
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalRoomTitle">Rezervasyon</h2>
+            <form id="reservationForm">
+                <input type="text" id="guestName" placeholder="Adınız Soyadınız" required>
+                <input type="date" id="checkInDate" required>
+                <button type="submit" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp ile Gönder
+                </button>
+            </form>
         </div>
     </div>
-
-    <section class="lobby-divider">
-        <h2>Zarif Lobimiz ve Karşılama Alanı</h2>
-    </section>
 
     <footer id="contact" class="footer">
         <div class="footer-info">
             <h3>İletişim Bilgileri</h3>
-            <p><strong>Adres:</strong> Kartaltepe mahallesi/2, Namık Kemal Cd. No:47/1, 34295 Küçükçekmece/İstanbul</p>
-            <p><strong>Rezervasyon Hattı:</strong> 0533 014 8676</p>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Sefaköy Super Stay Suit Hotel - Tüm Hakları Saklıdır.</p>
+            <p><i class="fas fa-map-marker-alt"></i> Kartaltepe Mah. Namık Kemal Cd. No:47/1, Küçükçekmece/İstanbul</p>
+            <p><i class="fas fa-phone"></i> <strong>05XX XXX XX XX</strong></p>
         </div>
     </footer>
 
