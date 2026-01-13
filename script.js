@@ -58,7 +58,7 @@ function sendWhatsApp(e, roomName) {
     e.preventDefault();
     const name = document.getElementById('guestName').value;
     const date = document.getElementById('checkInDate').value;
-    const telNo = "905077883144"; // Senin Numaran
+    const telNo = "905330148676"; 
 
     const text = `Merhaba Sefaköy Super Stay! %0A%0A` +
                  `Yeni bir rezervasyon talebim var:%0A` +
