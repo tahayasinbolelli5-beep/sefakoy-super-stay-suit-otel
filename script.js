@@ -15,7 +15,6 @@ function baslat() {
         <i class="fas fa-shower" title="7/24 Sıcak Su"></i>
     </div>`;
 
-    
     for (let i = 1; i <= OTEL_VERI.std; i++) {
         stdGrid.innerHTML += `
             <div class="room-card">
@@ -26,7 +25,6 @@ function baslat() {
             </div>`;
     }
 
-    
     for (let i = 1; i <= OTEL_VERI.suit; i++) {
         suitGrid.innerHTML += `
             <div class="room-card">
@@ -42,28 +40,15 @@ function modalAc(isim) {
     document.getElementById('modalRoomTitle').innerText = isim;
     document.getElementById('bookingModal').style.display = "block";
 }
-
-function closeModal() {
-    document.getElementById('bookingModal').style.display = "none";
-}
-
-
-window.onclick = function(event) {
-    const modal = document.getElementById('bookingModal');
-    if (event.target == modal) {
-        closeModal();
-    }
-}
+function closeModal() { document.getElementById('bookingModal').style.display = "none"; }
+window.onclick = function(event) { if (event.target == document.getElementById('bookingModal')) closeModal(); }
 
 document.getElementById('reservationForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const isim = document.getElementById('guestName').value;
     const tarih = document.getElementById('checkInDate').value;
     const oda = document.getElementById('modalRoomTitle').innerText;
-    
-    
-    const msg = `Merhaba! *Super Stay Suit* web sitenizden yazıyorum.%0A%0A*Rezervasyon Talebi*%0A*Oda:* ${oda}%0A*İsim:* ${isim}%0A*Giriş Tarihi:* ${tarih}`;
-    
+    const msg = `Merhaba! *1SUPER STAY SUIT* web sitenizden yazıyorum.%0A%0A*Rezervasyon Talebi*%0A*Oda:* ${oda}%0A*İsim:* ${isim}%0A*Giriş Tarihi:* ${tarih}`;
     window.open(`https://api.whatsapp.com/send?phone=${OTEL_VERI.whatsapp}&text=${msg}`, '_blank');
 });
 
