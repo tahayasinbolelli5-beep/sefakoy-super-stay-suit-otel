@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sefaköy Otel | Super Stay Suit Otel Küçükçekmece</title>
-    <meta name="description" content="Sefaköy ve Küçükçekmece'de konforlu ve uygun fiyatlı konaklama.">
+    <title>Sefaköy Super Stay Suit | 16 Oda | En Uygun Konaklama</title>
+    <meta name="description" content="Sefaköy'ün merkezinde 12 Standart ve 4 Suit oda ile profesyonel konaklama hizmeti. Uygun fiyat ve konforun adresi.">
+    
     <meta name="google-site-verification" content="google6230de3ca9fc16be" />
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">Super Stay Suit</div>
+        <div class="logo">SUPER STAY <span>SUIT</span></div>
         <ul class="nav-links">
             <li><a href="#home">Ana Sayfa</a></li>
             <li><a href="#rooms">Odalarımız</a></li>
@@ -22,31 +25,29 @@
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Sefaköy'ün Kalbinde Konfor</h1>
-            <p>Küçükçekmece'de lüks ve uygun fiyatlı konaklamanın adresi.</p>
-            <a href="#rooms" class="btn">Odaları Gör</a>
+            <h1>Sefaköy'ün Kalbinde Lüks</h1>
+            <p>16 Modern Oda - Konfor ve Güven</p>
+            <div class="hero-btns">
+                <a href="#rooms" class="btn">Odaları İncele</a>
+                <a href="tel:+905XXXXXXXXX" class="btn-outline">Hemen Ara</a>
+            </div>
         </div>
     </header>
 
     <section id="rooms" class="rooms">
-        <h2>Suit Odalarımız</h2>
-        <div class="room-grid">
-            <div class="room-card">
-                <img src="images/oda1.jpg" alt="Ekonomik Suit">
-                <div class="room-info">
-                    <h3>Ekonomik Suit</h3>
-                    <p>Konforlu ve bütçe dostu.</p>
-                    <button class="btn" onclick="openModal('Ekonomik Suit')">Rezervasyon Yap</button>
-                </div>
-            </div>
-            <div class="room-card">
-                <img src="images/oda2.jpg" alt="Deluxe Suit">
-                <div class="room-info">
-                    <h3>Deluxe Suit</h3>
-                    <p>Geniş ve modern tasarım.</p>
-                    <button class="btn" onclick="openModal('Deluxe Suit')">Rezervasyon Yap</button>
-                </div>
-            </div>
+        <div class="section-title">
+            <h2>Odalarımız</h2>
+            <p>Toplam 16 oda seçeneği ile hizmetinizdeyiz</p>
+        </div>
+
+        <div class="room-category">
+            <h3>Standart Odalar (12 Adet)</h3>
+            <div class="room-grid" id="standard-rooms"></div>
+        </div>
+
+        <div class="room-category">
+            <h3>Lüks Suit Odalar (4 Adet)</h3>
+            <div class="room-grid" id="suit-rooms"></div>
         </div>
     </section>
 
@@ -63,10 +64,19 @@
     </div>
 
     <footer id="contact" class="footer">
-        <div class="footer-info">
-            <h3>İletişim Bilgileri</h3>
-            <p>Kartaltepe Mah. Namık Kemal Cd. No:47/1, Küçükçekmece/İstanbul</p>
-            <p><strong>Rezervasyon: 05XX XXX XX XX</strong></p>
+        <div class="footer-grid">
+            <div class="footer-item">
+                <h3>KONUM</h3>
+                <p>Kartaltepe Mah. Namık Kemal Cd. No:47/1<br>Küçükçekmece/İstanbul</p>
+            </div>
+            <div class="footer-item">
+                <h3>İLETİŞİM</h3>
+                <p class="phone-highlight">TEL: 05XX XXX XX XX</p>
+                <p>7/24 Kesintisiz Hizmet</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Super Stay Suit Sefaköy. Tüm Hakları Saklıdır.
         </div>
     </footer>
 
