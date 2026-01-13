@@ -3,14 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sefaköy Super Stay Suit | 16 Oda | Konforlu Konaklama</title>
-    <meta name="description" content="Sefaköy merkezde 12 Standart ve 4 Suit oda. Uygun fiyatlı ve lüks konaklama.">
-    
+    <title>Sefaköy Super Stay Suit | Metrobüse 5 Dakika | 0533 014 8676</title>
+    <meta name="description" content="Sefaköy merkezde, metrobüse yürüme mesafesinde 16 modern oda. 7/24 hizmet, hijyenik ve güvenli konaklama.">
     <meta name="google-site-verification" content="google6230de3ca9fc16be" />
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -19,25 +17,34 @@
         <ul class="nav-links">
             <li><a href="#home">Ana Sayfa</a></li>
             <li><a href="#rooms">Odalarımız</a></li>
+            <li><a href="#features">Özellikler</a></li>
             <li><a href="#contact">İletişim</a></li>
         </ul>
     </nav>
 
     <header id="home" class="hero">
         <div class="hero-content">
-            <h1>Sefaköy'ün Kalbinde Konfor</h1>
-            <p>16 Modern Oda - 12 Standart & 4 Lüks Suit</p>
+            <span class="badge">Sefaköy Metrobüse 5 Dakika</span>
+            <h1>Şehrin Merkezinde Üstün Konfor</h1>
+            <p>12 Standart & 4 Lüks Suit Oda ile Hizmetinizdeyiz</p>
             <div class="hero-btns">
                 <a href="#rooms" class="btn">Odaları İncele</a>
-                <a href="tel:+905330148676" class="btn-outline">Hemen Ara</a>
+                <a href="https://maps.app.goo.gl/95u3yV6zYx5F6L8z6" target="_blank" class="btn-outline"><i class="fas fa-map-marker-alt"></i> Yol Tarifi Al</a>
             </div>
         </div>
     </header>
 
+    <section id="features" class="features-bar">
+        <div class="f-item"><i class="fas fa-shield-alt"></i> <span>Güvenli Konaklama</span></div>
+        <div class="f-item"><i class="fas fa-broom"></i> <span>Günlük Temizlik</span></div>
+        <div class="f-item"><i class="fas fa-clock"></i> <span>7/24 Resepsiyon</span></div>
+        <div class="f-item"><i class="fas fa-wifi"></i> <span>Fiber İnternet</span></div>
+    </section>
+
     <section id="rooms" class="rooms">
         <div class="section-title">
-            <h2>Odalarımız</h2>
-            <p>Size en uygun odayı seçin</p>
+            <h2>Konaklama Seçenekleri</h2>
+            <p>Tüm odalarımızda klima, LED TV ve buklet malzemeleri mevcuttur.</p>
         </div>
 
         <div class="room-category">
@@ -53,12 +60,12 @@
 
     <div id="bookingModal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
+            <span class="close" onclick="closeModal()">×</span>
             <h2 id="modalRoomTitle">Rezervasyon</h2>
             <form id="reservationForm">
                 <input type="text" id="guestName" placeholder="Adınız Soyadınız" required>
                 <input type="date" id="checkInDate" required>
-                <button type="submit" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp ile Gönder</button>
+                <button type="submit" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> WhatsApp'tan Sor</button>
             </form>
         </div>
     </div>
@@ -68,15 +75,17 @@
             <div class="footer-item">
                 <h3>KONUM</h3>
                 <p>Kartaltepe Mah. Namık Kemal Cd. No:47/1<br>Küçükçekmece/İstanbul</p>
+                <a href="https://maps.app.goo.gl/95u3yV6zYx5F6L8z6" target="_blank" class="map-link">Haritada Görüntüle →</a>
             </div>
             <div class="footer-item">
                 <h3>İLETİŞİM</h3>
                 <p class="footer-phone">TEL: 0533 014 8676</p>
-                <p class="footer-subtext">7/24 Rezervasyon Hattı</p>
+                <p class="footer-subtext">Hemen arayıp yerinizi ayırtın.</p>
+                <a href="tel:+905330148676" class="btn" style="margin-top:10px; padding: 8px 20px; font-size: 14px;">Tıkla Ara</a>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; 2026 Super Stay Suit Sefaköy. Tüm Hakları Saklıdır.
+            © 2026 Super Stay Suit Sefaköy. Tüm Hakları Saklıdır.
         </div>
     </footer>
 
